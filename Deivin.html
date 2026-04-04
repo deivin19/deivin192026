@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deise & Marvin - Forever Together</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(deivin\(1\).jpg) center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero .date {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero .cta {
+            padding: 1rem 2rem;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        /* Story Section */
+        .story {
+            background: #f8f9fa;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .story-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+
+        .story-img {
+            position: relative;
+        }
+
+        .story-img img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .story-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Deise & Marvin</h1>
+        <h1><q>DEIVIN</q></h1>
+        <div class="date">January 19, 2026</div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story fade-in">
+        <h2>Our Story</h2>
+        <div class="story-content">
+            <div class="story-text">
+                <h3>How We Met</h3>
+                <p>We are both Iglesia Ni Cristo member and also a Choir member. That day of what we called LINGAP PAMAMAHAYAG then it's a rainy weather that day and while I am going at the venue of the event to prepare the venue, I saw her washing their clothes. When I got back at our church I immediately chat her "Wag ka na maglaba, uulan" then she replied "Kaya nga eh, wag ka papaulan baka di ka na lumaki". Our first chat, and then days, weeks, months passed, we got close to each other and so happy when we are talking online and then I admit to her that I like her, then she replied that she likes me too, I decided to court her, she agreed. I decided to meet her in personal to have lunch, she agreed and we go at the Waltermart and then we have on our church called BANTAY and we have different schedules, I am going to her schedule, even I am walking along 3 to 4 kilometers far. I thought we will get shy on each other but no we are so close, eating some snacks, talking about some nonsense topics. And then March 26. 2024 we are officially Boyfriend and Girlfriend, we are so happy that day. We know that relationship is not perfect, we also argue sometimes, sometimes everyday, just kidding. We also have problems especially on after our Anniversary we got broke up because of very serious problem. We fix first ourselves, we need to grow and learn from our mistakes. And then January 19, 2026 we got come back and here we are now standing strong, growing, matured and loving each other. </p>
+                <br>
+                <h3>Our Promise</h3>
+                <p>Through every sunrise and sunset, every laugh and tear, we promise to love, support, and grow together. Forever isn't long enough.</p>
+            </div>
+            <div class="story-img">
+                <img src="first met.jpg" alt="Couple">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="fade-in">
+        <h2>Memories</h2>
+        <div class="gallery">
+            <img src="deivin.jfif" alt="Moment 1">
+            <img src="PALAGI.jpg" alt="Moment 2">
+            <img src="wifey.jpg" alt="Moment 3">
+            <img src="shang.jfif" alt="Moment 4">
+            <img src="SAYO AKO.jpg" alt="Moment 5">
+            <img src="wews.jpg" alt="Moment 6">
+            <img src="qwerty.jpg" alt="Moment 7">
+            <img src="dsmglnz.jpg" alt="Moment 8">
+            <img src="jmjm.jpg" alt="Moment 9">
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Deise & Marvin. Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for our special day.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255,255,255,0.98)';
+            } else {
+                nav.style.background = 'rgba(255,255,255,0.95)';
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Gallery lightbox effect (simple)
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', function() {
+                const src = this.src;
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.9);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2000;
+                    cursor: pointer;
+                `;
+                modal.innerHTML = `<img src="${src}" style="max-width: 90%; max-height: 90%; border-radius: 10px;">`;
+                document.body.appendChild(modal);
+                modal.addEventListener('click', () => document.body.removeChild(modal));
+            });
+        });
+    </script>
+</body>
+</html>

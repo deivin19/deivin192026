@@ -1,0 +1,23 @@
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(deivin.jfif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+    filter: blur(10px);
+}
+.head h1 {
+    color: black;
+}
+.head img {
+    border-radius: 30%;
+    margin-top: 20%;
+    transition: transform 0.3s;
+}
+.head img:hover {
+    transform: scale(1.2);
+}
